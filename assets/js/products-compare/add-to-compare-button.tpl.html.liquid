@@ -1,7 +1,8 @@
 <button id="addToCompareList"
-        ng-disabled="$ctrl.containProduct"  
+        ng-disabled="$ctrl.containProduct"
         ng-class="[$ctrl.showButtonName ? '' : [$ctrl.customClass, 'btn-secondary'], $ctrl.containProduct ? 'disabled-compare-button':'']"
         class="btn btn-clearfix"
+        style="background-color: #44ae24;"
         type="button"
         ng-click="$ctrl.addProductToCompareList($event);">
     <span class="fa fa-bar-chart"></span>

@@ -1142,6 +1142,7 @@ hr {
   .section-header {
     display: table;
     width: 100%;
+    color: $headerText;
   }
 
   .section-header--left {
@@ -1160,6 +1161,7 @@ hr {
     vertical-align: middle;
     text-align: right;
     width: 335px;
+    color: $headerText;
 
     @include at-query ($max, $medium) {
       margin-bottom: $gutter;
@@ -2370,7 +2372,7 @@ $shareBorderColor: #ececec;
     cursor: pointer;
 
     .site-header & {
-      color: $headerText;
+      color: $colorTextBody;
     }
   }
 
