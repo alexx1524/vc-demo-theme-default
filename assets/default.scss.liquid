@@ -2816,6 +2816,32 @@ $shareBorderColor: #ececec;
 
 }
 
+.product-list li .image::after {
+    background: $colorBtnPrimary !important;
+}
+
+.product-sku .size li a,
+.product-sku .color li a
+{
+	border: 1px solid $colorBtnPrimary !important;
+}
+
+.product-sku .size li.active a,
+.product-sku .color li.active a
+{
+	background: $colorBtnPrimary !important;
+}
+
+.tabs
+{
+	border-bottom: 1px solid $colorBtnPrimary !important;
+}
+
+.tabs li.active a
+{
+	background: $colorBtnPrimary !important;
+}
+
 @include at-query ($max, $medium) {
   .product-list-item .spr-badge {
     clear: both;
