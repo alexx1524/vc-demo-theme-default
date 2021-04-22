@@ -41,11 +41,11 @@
             <div class="cart-row">
                 <div class="grid">
                     <div class="grid-item text-right">
-                        <button class="btn" ng-class="{ 'btn-secondary': !dialogData.updated }" style="background-color: #44ae24;" ng-disabled="!dialogData.updated" ng-click="redirect('{{ 'cart' | absolute_url }}')">
+                        <button class="btn" ng-class="{ 'btn-secondary': !dialogData.updated }" ng-disabled="!dialogData.updated" ng-click="redirect('{{ 'cart' | absolute_url }}')">
                             <span ng-if="dialogData.updated">{{ 'cart.general.go_cart' | t }}</span>
                             <span ng-if="!dialogData.updated">{{ 'cart.general.update_cart' | t }}</span>
                         </button>
-                        <button class="btn" style="background-color: #44ae24;" ng-click="close()">{{ 'dialog.countinue_shop' | t }}</button>
+                        <button class="btn" ng-click="close()">{{ 'dialog.countinue_shop' | t }}</button>
                     </div>
                 </div>
             </div>

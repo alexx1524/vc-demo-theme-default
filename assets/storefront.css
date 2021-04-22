@@ -55,14 +55,14 @@
 .product-sku .size li a,
 .product-sku .color li a
 {
-	border: 1px solid #204a80;
+	border: 1px solid #44ea24;
 	padding: 1px 10px 0;
 }
 
 .product-sku .size li.active a,
 .product-sku .color li.active a
 {
-	background: #204a80;
+	background: #44ea24;
 	color: #fff;
 }
 
@@ -75,7 +75,7 @@
 
 .tabs
 {
-	border-bottom: 1px solid #204a80;
+	border-bottom: 1px solid #44ea24;
 	margin: 20px 0;
 	word-spacing: -5px;
 }
@@ -89,7 +89,7 @@
 
 .tabs li a
 {
-	border-color: #204a80;
+	border-color: #44ea24;
 	border-style: solid;
 	border-width: 1px 1px 0;
 	display: block;
@@ -98,7 +98,7 @@
 
 .tabs li.active a
 {
-	background: #204a80;
+	background: #44ea24;
 	color: #fff;
 }
 
