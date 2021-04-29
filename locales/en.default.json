@@ -204,7 +204,7 @@
         "general": {
             "title": "Shopping Cart",
             "remove": "Remove",
-            "note": "Special instructions for seller",
+            "note": "Additional comment for your order",
             "subtotal": "Items total",
             "subtotalWithTax": "Items total (Inc VAT)",
             "total": "Total",

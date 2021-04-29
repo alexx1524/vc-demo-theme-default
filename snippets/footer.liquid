@@ -113,27 +113,6 @@
 
     <hr class="hr--small">
 
-    <div class="grid">
-      <div class="grid-item">
-        {% if settings.footer_legallinks_enable %}
-          <ul class="legal-links inline-list">
-            {% for link in linklists[settings.footer_legallinks_linklist].links %}
-              <li><a href="{{ link.url | absolute_url }}">{{ link.title }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        <ul class="legal-links inline-list">
-          <li>
-            &copy; {{ 'now' | date: "yyyy" }} {{ shop.name }}
-          </li>
-          <li>
-              {{ powered_by }}
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
   </div>
 
 </footer>
