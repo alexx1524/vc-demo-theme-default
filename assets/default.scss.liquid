@@ -74,19 +74,23 @@ $breakpoint-has-pull:  ('medium', 'medium-down', 'large');
 $colorPrimary: {{ settings.color_primary }};
 $colorSecondary: {{ settings.color_secondary }};
 $colorAccent: {{ settings.color_accent }};
+$colorBtn: {{ settings.color_btn }};
+$colorBtnHover: {{ settings.color_btn_hover}};
+$colorBtnActive: {{ settings.color_btn_active }};
+$colorLnk: {{ settings.color_lnk }};
 
 // Button colors
-$colorBtnPrimary: $colorPrimary;
-$colorBtnPrimaryHover: darken($colorBtnPrimary, 5%);
-$colorBtnPrimaryActive: darken($colorBtnPrimaryHover, 5%);
+$colorBtnPrimary: $colorBtn;
+$colorBtnPrimaryHover: $colorBtnHover;
+$colorBtnPrimaryActive: $colorBtnActive;
 
-$colorBtnSecondary: $colorSecondary;
-$colorBtnSecondaryHover: darken($colorBtnSecondary, 5%);
-$colorBtnSecondaryActive: darken($colorBtnSecondaryHover, 5%);
+$colorBtnSecondary: $colorBtn;
+$colorBtnSecondaryHover: $colorBtnHover;
+$colorBtnSecondaryActive: $colorBtnActive;
 
 // Text link colors
-$colorLink: $colorPrimary;
-$colorLinkHover: lighten($colorPrimary, 15%);
+$colorLink: $colorLnk;
+$colorLinkHover: lighten($colorLnk, 15%);
 
 // General colors
 $colorBody: {{ settings.color_body_bg }};
@@ -1142,6 +1146,7 @@ hr {
   .section-header {
     display: table;
     width: 100%;
+    color: $headerText;
   }
 
   .section-header--left {
@@ -1160,6 +1165,7 @@ hr {
     vertical-align: middle;
     text-align: right;
     width: 335px;
+    color: $headerText;
 
     @include at-query ($max, $medium) {
       margin-bottom: $gutter;
@@ -2370,7 +2376,7 @@ $shareBorderColor: #ececec;
     cursor: pointer;
 
     .site-header & {
-      color: $headerText;
+      color: $colorTextBody;
     }
   }
 
@@ -2808,6 +2814,33 @@ $shareBorderColor: #ececec;
 
 .on-sale {
 
+}
+
+.product-list li .image::after {
+    background: $colorNav !important;
+}
+
+.product-sku .size li a,
+.product-sku .color li a
+{
+	border: 1px solid $colorNav !important;
+}
+
+.product-sku .size li.active a,
+.product-sku .color li.active a
+{
+	background: $colorNav !important;
+}
+
+.tabs
+{
+	border-bottom: 1px solid $colorNav !important;
+}
+
+.tabs li.active a
+{
+	background: $colorNav !important;
+    border: none;
 }
 
 @include at-query ($max, $medium) {
