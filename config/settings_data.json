@@ -33,7 +33,7 @@
             "color_btn_active": "368b1d",
             "color_lnk": "#0066cc",
             "customer_layout": "account_layout",
-            "favicon_enable": false,
+            "favicon_enable": true,
             "footer_content_enable": true,
             "footer_legallinks_enable": true,
             "footer_newsletter_enable": true,
